@@ -53,6 +53,7 @@ function Login() {
           // console.log(userData);
           if(userData.is_changed_password == 0){
             localStorage.setItem("user_id", responseData.data.id);
+            localStorage.setItem("is_changed_password", responseData.data.is_changed_password);
             navigate("/changePassword");
             return;
           }

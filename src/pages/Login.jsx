@@ -49,15 +49,21 @@ function Login() {
       .then((responseData) => {
         // console.log(responseData);
         if (responseData) {
-          const userData = responseData.data.user;
+          const userData = responseData.data;
           // console.log(userData);
-          localStorage.setItem("authToken", responseData.data.token);
-          localStorage.setItem(
-            "authUser",
-            JSON.stringify({
-              userData,
-            })
-          );
+          if(userData.is_changed_password == 0){
+            localStorage.setItem("user_id", responseData.data.id);
+            navigate("/changePassword");
+            return;
+          }
+            localStorage.setItem("authToken", responseData.data.token);
+            localStorage.setItem(
+              "authUser",
+              JSON.stringify({
+                userData,
+              })
+            );
+          
         } else {
           throw new Error("Token not found in response");
         }

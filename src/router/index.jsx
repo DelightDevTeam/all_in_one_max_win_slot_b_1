@@ -13,6 +13,7 @@ import Games from "../pages/Games";
 import HistoryPage from "../pages/HistoryPage";
 import GameLogPage from "../pages/GameLog";
 import PromotionDetail from "../pages/PromotionDetail";
+import ChangePassword from "../pages/ChangePassword";
 
 const router = createBrowserRouter([
   {
@@ -24,10 +25,13 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
+        path: "/changePassword",
+        element: <ChangePassword />,
+      },
+      {
         path: "/profile",
         element: <Profile />,
       },
-
       {
         path: "/incomeletter",
         element: <Incomeletter />,
@@ -59,7 +63,7 @@ const router = createBrowserRouter([
       {
         path: "/games",
         element: <Games />,
-      },
+      }
     ],
   },
 ]);

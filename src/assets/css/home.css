@@ -51,9 +51,10 @@ footer {
 }
 
 .footerImg {
-  height: 30px;
   width: 30px;
-  object-fit: cover;
+  height: 30px;
+  /* object-fit: cover; */
+  margin: 10px 0;
 }
 
 .nav-pills .nav-link.active,

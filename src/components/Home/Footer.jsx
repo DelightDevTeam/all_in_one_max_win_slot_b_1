@@ -14,7 +14,7 @@ const Footer = () => {
   ];
   return (
     <footer 
-    className='rounded-top-5 px-3 px-sm-5 py-3 fixed-bottom d-flex align-items-center justify-content-between mt-5 shadow-lg'>
+    className='rounded-top-5 px-4 px-sm-5 py-3 fixed-bottom d-flex align-items-center justify-content-between mt-5 shadow-lg'>
       {footerIcons.map((item, index) => {
         return (
           <NavLink

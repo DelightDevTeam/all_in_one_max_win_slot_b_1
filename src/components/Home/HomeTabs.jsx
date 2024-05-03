@@ -86,7 +86,7 @@ function HomeTabs() {
               <Nav variant='pills' className='flex-column'>
                 <Nav.Item>
                   <Nav.Link
-                    className='border rounded-3 mb-1 py-0 py-sm-1 mb-sm-2 px-0 d-flex flex-column align-items-center '
+                    className='border rounded-3 mb-1 py-0 py-sm-1 mb-sm-2 px-1 d-flex flex-column align-items-center '
                     eventKey={0}
                     onClick={() => setUrl(BASE_URL + '/allGameProducts')}
                   >

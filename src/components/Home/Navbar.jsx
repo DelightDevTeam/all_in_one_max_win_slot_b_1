@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import { Modal, Table } from 'react-bootstrap';
-import logo from '../../assets/img/logo1.png';
+import logo from '../../assets/img/logo.jpg';
 import axios from 'axios';
 import BASE_URL from '../../hooks/baseURL';
 import '../../assets/css/navbar.css';

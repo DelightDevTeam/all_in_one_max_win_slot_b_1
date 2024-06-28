@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import { Modal, Table } from 'react-bootstrap';
-import logo from '../../assets/img/logo.jpg';
+import logo from '../../assets/img/logo.png';
 import axios from 'axios';
 import BASE_URL from '../../hooks/baseURL';
 import '../../assets/css/navbar.css';
@@ -52,9 +52,9 @@ const Navbar = () => {
           to={'/'}
         >
           <h2 className='logo mt-1  ' style={{ color: 'gold' }}>
-            <img src={logo} width={45} alt='' />
+            <img src={logo} width={180} alt='' />
           </h2>
-          <h5 className=' logoTitle ms-2 text-light'>Max Win</h5>
+          {/* <h5 className=' logoTitle ms-2 text-light'>Max Win</h5> */}
         </NavLink>
         {auth && (
               <>

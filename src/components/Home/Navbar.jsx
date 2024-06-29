@@ -51,9 +51,9 @@ const Navbar = () => {
           className='text-decoration-none d-flex navLogo align-items-center '
           to={'/'}
         >
-          <h2 className='logo mt-1  ' style={{ color: 'gold' }}>
-            <img src={logo} width={180} alt='' />
-          </h2>
+          <div>
+            <img src={logo} width={160} alt='' />
+          </div>
           {/* <h5 className=' logoTitle ms-2 text-light'>Max Win</h5> */}
         </NavLink>
         {auth && (
